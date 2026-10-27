@@ -1,0 +1,28 @@
+[project]
+name = "py-tiptap2mjml"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "rr00bbiinn"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+]
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
+
+
+[tool.poetry]
+  packages = [{ include = "tiptap2mjml" }]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
